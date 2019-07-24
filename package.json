@@ -1,0 +1,34 @@
+{
+  "name": "crud-repository-dynamodb",
+  "version": "1.0.0",
+  "description": "A library to connect to DynamoDB using NodeJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+    "test": "npm run build && AWS_REGION=localhost AWS_DYNAMO_ENDPOINT=http://localhost:8000 node dist/test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darlanmoraes/crud-repository-dynamodb.git"
+  },
+  "author": "Darlan de Moraes Silveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darlanmoraes/crud-repository-dynamodb/issues"
+  },
+  "homepage": "https://github.com/darlanmoraes/crud-repository-dynamodb#readme",
+  "dependencies": {
+    "reflect-metadata": "0.1.13"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "2.7.0",
+    "@types/es6-promise": "3.3.0",
+    "@types/node": "10.5.1",
+    "tslint": "5.18.0",
+    "typescript": "3.5.3"
+  }
+}
