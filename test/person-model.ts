@@ -1,4 +1,4 @@
-import { Column } from "../src/repository/decorators/column-decoration";
+import { Column } from "../src/repository/decorators/column-decorator";
 import { Key } from "../src/repository/decorators/key-decorator";
 import { Table } from "../src/repository/decorators/table-decorator";
 
