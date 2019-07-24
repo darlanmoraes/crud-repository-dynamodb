@@ -18,4 +18,4 @@ function getColumn(target, property) {
     return metadata[property] ? metadata[property] : property;
 }
 exports.getColumn = getColumn;
-//# sourceMappingURL=column-decoration.js.map
+//# sourceMappingURL=column-decorator.js.map

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const column_decoration_1 = require("./decorators/column-decoration");
+const column_decorator_1 = require("./decorators/column-decorator");
 class Mapper {
     fromItem(item, entity) {
         const result = new entity();
@@ -23,7 +23,7 @@ class Mapper {
         const result = {};
         for (const property in entity) {
             if (entity[property]) {
-                const column = column_decoration_1.getColumn(entity, property);
+                const column = column_decorator_1.getColumn(entity, property);
                 const value = entity[property];
                 if (typeof column === "string") { // when item doesn't have decorators
                     result[column] = value;

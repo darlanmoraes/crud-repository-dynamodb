@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { getColumn } from "./column-decoration";
+import { getColumn } from "./column-decorator";
 
 const METADATA_KEY = Symbol("id");
 

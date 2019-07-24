@@ -1,5 +1,5 @@
 import { AttributeMap } from "aws-sdk/clients/xray";
-import { getColumn } from "./decorators/column-decoration";
+import { getColumn } from "./decorators/column-decorator";
 
 export class Mapper<T extends { id: string }> {
 
