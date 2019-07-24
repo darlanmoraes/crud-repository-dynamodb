@@ -13,10 +13,10 @@ const key_decorator_1 = require("./decorators/key-decorator");
 const table_decorator_1 = require("./decorators/table-decorator");
 const mapper_1 = require("./mapper");
 function configure() {
-    const { AWS_REGION, AWS_DYNAMO_ENDPOINT } = process.env;
+    const { REGION, DYNAMO_ENDPOINT } = process.env;
     return {
-        endpoint: AWS_DYNAMO_ENDPOINT,
-        region: AWS_REGION,
+        endpoint: DYNAMO_ENDPOINT,
+        region: REGION,
     };
 }
 class CrudRepository {

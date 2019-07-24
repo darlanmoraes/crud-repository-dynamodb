@@ -29,8 +29,8 @@ aws dynamodb scan --table-name person --region localhost --endpoint-url http://l
 - Configuring
 
 ```
-export AWS_REGION=sa-east-1
-export AWS_DYNAMO_ENDPOINT=https://dynamodb.sa-east-1.amazonaws.com
+export REGION=sa-east-1
+export DYNAMO_ENDPOINT=https://dynamodb.sa-east-1.amazonaws.com
 ```
 
 - Create new CRUD Repository
